@@ -16,7 +16,7 @@
 
 ## Project Overview and Goals
 
-The Mobile Banking Application for ESASCCO is an open-source solution designed for Cooperative Financial Institutions (CFIs). This application facilitates secure and efficient banking operations, enabling users to manage accounts, transfer funds, and apply for loans seamlessly. By integrating with various core banking systems, such as Ledgers CBS, it enhances financial accessibility and inclusivity.
+The Mobile Banking Application for ESASCCO is an open-source solution designed for Cooperative Financial Institutions (CFIs). This application facilitates secure and efficient banking operations, enabling users to manage accounts, transfer funds, and apply for loans seamlessly. By integrating with various core banking systems, such as [Ledgers CBS](https://github.com/adorsys/ledgers), it enhances financial accessibility and inclusivity.
 
 ### Project goals
 
