@@ -7,29 +7,22 @@ various core banking systems (CBS), ranging from simple batch-based systems to a
 systems like adorsys Ledgers Mambu and Mifos.
 
 ## Project goals
-this online banking project is aimed at building an application with the following goals.
-1. Enhance financial accessibility and inclusivity for CFIs.
-2. Provide a secure, flexible, and scalable mobile banking platform.
-3. Facilitate seamless integration with existing core banking systems.
-4. High security, with features such as cryptographic signing and role-based access control.
-5. Modularity and extensibility to support future development and integration.
-6. User-friendly design that can be easily translated into multiple languages.
-
-##Project Constraints
-1.The application must comply with ISO20022 data standards to simplify connectivity to
-different core banking systems.
-2. Compatibility with both live and non-live core banking systems is essential.
-3. The platform must support a range of devices, from older smartphones to desktops.
+The project goals of this project are briefly explained in <https://github.com/ADORSYS-GIS/webank/blob/main/docs/architecture/01_introduction_and_goals.md>
 
 ## Team Structure
+
 **Project Name:** webank
 **Project Repository** [webank github repository](https://github.com/ADORSYS-GIS/webank)
+
 **Project Manager:** Francis Pouatcha
-	Role: managers oversee the entirety of a project, including logistics like budget and risk.
-**Product Owner:** Francis Pouatcha  
-  Role: Defines the product backlog, prioritizes work.
+- Role: managers oversee the entirety of a project, including logistics like budget and risk.
+
+**Product Owner:** Francis Pouatcha (Temporal)
+  - Role: Defines the product backlog, prioritizes work.
+
 **Scrum Master:** Nancy Muyeh
-	Role: Facilitates Scrum processes, removes impediments.
+- Role: Facilitates Scrum processes, removes impediments.
+
 **Development Team:**
   - Nkwa Jude Tambe - Fullstack developer
   - Hans Chia - Fullstack developer
@@ -40,7 +33,8 @@ different core banking systems.
 
 **Start Date**: September 10 2024
 
-## Scrum Framework 
+## Scrum Framework
+
  **Sprint Duration:** 2-3 weeks (This is subject to change)
 
  **Sprint Goals:**
@@ -59,7 +53,7 @@ different core banking systems.
 - Break down the sprint goal into actionable tasks or stories and create a detailed sprint backlog. This includes defining tasks, assigning them, and estimating their effort.
 - Clearly define the acceptance criteria for each backlog item to ensure that the sprint goal can be objectively evaluated.
 
-**Daily Standups:** This meeting will be held every working day as from 9:00AM GMT+1 either on microsoft teams or onsite in the online bankinking office at Skyengpro Cameroon.
+**Daily Standups:** This meeting will be held every working day as from 9:00AM GMT+1 either on microsoft teams or onsite in the  meeting at Skyengpro Cameroon.
 - All team members are expected to attend daily. If any team member is unable to make it, they should inform the scrum master or the other team members in advance and share their update on the team's slack channel or via email.
 - Every team member should come to this meeting prepared to provide a quick update on their tasks. If any team member has any blockers, they should be ready to discuss them briefly.
 - All team members should ensure that their tasks are updated in in the projects github repository before the meeting.
@@ -90,8 +84,10 @@ different core banking systems.
 - What Went Well: Discuss positive aspects and successes of the sprint.
 - What Didn’t Go Well: Identify challenges, issues, and obstacles faced during the sprint.
 - Identify practices to start, stop, or continue.
+
 ## Version Control and GitHub Usage
- **Repository Structure:** This project is organized into multiple repositories, each serving a specific purpose within the overall architecture. Each repository also haself-defininig README.md file which describes it's purpose, installation and usage  Below is a brief overview of each repository and its role in the project.
+
+ **Repository Structure:** This project is organized into multiple repositories, each serving a specific purpose within the overall architecture. Each repository also has a self-defininig README.md file which describes it's purpose, installation and usage  Below is a brief overview of each repository and its role in the project.
 
 - [webank](https://github.com/ADORSYS-GIS/webank) : This repository is mainly for documentation and some main modules of the project. In this repository,the project overview is in the README.md while every other documentation goes to the docs folder.
 
@@ -114,18 +110,21 @@ different core banking systems.
 	c. Issue the BankID to be returned to the User-App.
 	2. 1st Level Support: A teller has a sound understanding of processes and procedures implemented by the onlinebanking environment and acts as the first level support instance to banking users.
 	3. Offboarding User-App: The teller is also in charge of initiating the revocation of a User-App on the request of the bankinguser, after checking legitimacy of the revocation request.
+
 - [webank-AdminApp](https://github.com/ADORSYS-GIS/webank-AdminApp)  This is just another PWA with the following functionalities  
     1. Onboarding Teller-App, issuing TellerID after verifying the authenticity of the teller.
     2. Offboarding Teller-App,
     3. Suspending Teller-App when teller is on leave.
-**Branching Strategy:** 
-**Commit Guidelines:** Use commut conventions in nthe best way possible
+
+**Branching Strategy:** A branch should be created for every new feature or fix.
+
+**Commit Guidelines:** Use commit conventions in nthe best way possible.
+
 **Pull Requests:** Pull request must be reviewed by at least two team members before merging.
 
 ## Communication Channels
 **Slack/Teams/Other:** [slack channel](https://app.slack.com/client/T02977GUH/C07KTC0ER4L?cdn_fallback=1): This is the main communication channel for this project.
 - microsoft teams: For online meetings and other interactions.
-- [Online Banking whatsapp group](https://chat.whatsapp.com/HGdeHvl2Gs5DE50RrqE01k): For local updates and gist that conern the project
 
 
 ## Documentation and Resources
