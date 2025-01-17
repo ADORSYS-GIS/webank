@@ -4,10 +4,10 @@
 1. [Introduction](#introduction)
 2. [What is SDLC?](#what-is-sdlc)
     - [Stages of SDLC](#stages-of-sdlc)
-3. [What is SSDLC?](#what-is-ssdlc)
+3. [What is SSDLC?](#what-then-is-ssdlc)
     - [Stages of SSDLC](#stages-of-ssdlc)
 4. [Why SSDLC?](#why-ssdlc)
-5. [How SSDLC Was Applied in Our Project](#how-ssdlc-was-applied-in-our-project)
+5. [How SSDLC Was Applied in Our Project](#how-it-was-implemented)
 
 
 ## Introduction
@@ -109,8 +109,8 @@ Integrating security into SDLC is akin to constructing a building with reinforce
 
 # SSDLC in Our Project
 
-## How it was implemented
-# 1. Requirements Gathering
+### How it was implemented
+### 1. Requirements Gathering
 
 - The first stage of the SDLC involved close collaboration with stakeholders to understand both business and security requirements. 
 - We focused on designing security from the ground up, ensuring a strong foundation for the entire development process.
@@ -174,7 +174,7 @@ One significant vulnerability discovered during development was a hardcoded API 
 - These tests helped identify issues early and ensured that both functional and security requirements were met.
 
 ### Vulnerability Scanning Tools
-- We used OWASP ZAP and Snyk for scanning the application for known vulnerabilities, focusing on dependency issues and misconfigurations. Snyk was particularly useful in identifying vulnerable dependencies that could have been exploited by attackers.
+- We used OWASP ZAP and Dependabot for scanning the application for known vulnerabilities, focusing on dependency issues and misconfigurations. Dependabot was particularly useful in identifying vulnerable dependencies that could have been exploited by attackers.
 
 ### Security Test Cases
 ..
