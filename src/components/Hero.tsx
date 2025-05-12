@@ -47,39 +47,20 @@ const Hero = () => {
           </div>
           
           <div className="flex-1 flex flex-col lg:flex-row items-center gap-8">
-            {/* Bank Card Preview */}
-            <div className="w-full lg:w-2/3 h-[500px] bg-gradient-to-br from-bank-blue to-blue-400 rounded-3xl shadow-xl flex items-center justify-center">
-              <div className="bg-white w-3/4 h-3/4 rounded-2xl shadow-lg flex flex-col p-6 relative overflow-hidden">
-                <div className="absolute top-0 right-0 left-0 h-2 bg-bank-blue"></div>
-                <h3 className="text-xl font-bold text-bank-navy">Carte Wenank</h3>
-                <div className="mt-auto h-48 w-full bg-gradient-to-r from-bank-blue to-blue-600 rounded-xl p-4 flex flex-col justify-between shadow-md">
-                  <div className="flex justify-between items-center">
-                    <div className="w-12 h-8 bg-yellow-300 rounded-md"></div>
-                    <div className="text-white">
-                      <p className="text-xs opacity-80">Balance</p>
-                      <p className="font-bold">€1,250.00</p>
-                    </div>
-                  </div>
-                  <div className="text-white">
-                    <p className="opacity-80 text-xs">**** **** **** 3456</p>
-                    <p className="mt-2 font-medium">JEAN DUPONT</p>
-                  </div>
-                </div>
-                <div className="mt-6">
-                  <p className="text-sm text-bank-gray">Dernières transactions</p>
-                  <div className="mt-2 space-y-2">
-                    <div className="flex justify-between items-center text-sm">
-                      <span>Supermarché</span>
-                      <span className="font-medium">-€42.50</span>
-                    </div>
-                    <div className="flex justify-between items-center text-sm">
-                      <span>Salaire</span>
-                      <span className="font-medium text-green-600">+€2,450.00</span>
-                    </div>
-                    <div className="flex justify-between items-center text-sm">
-                      <span>Restaurant</span>
-                      <span className="font-medium">-€28.75</span>
-                    </div>
+            {/* Smartphone avec QR Code */}
+            <div className="w-full lg:w-2/3 flex justify-center items-center">
+              <div className="relative max-w-[300px] mx-auto">
+                <img 
+                  src="/lovable-uploads/7229b857-4cfa-4089-8f2c-7f2b36072774.png" 
+                  alt="Smartphone Wenank" 
+                  className="w-full h-auto"
+                />
+                <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center">
+                  <div className="flex flex-col items-center">
+                    <QrCode className="w-32 h-32 text-bank-navy" strokeWidth={1} />
+                    <p className="text-xs font-medium text-center mt-2 text-bank-navy bg-white/80 px-2 py-1 rounded-md">
+                      Scanner pour télécharger
+                    </p>
                   </div>
                 </div>
               </div>
