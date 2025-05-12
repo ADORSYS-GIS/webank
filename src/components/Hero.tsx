@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { CreditCard, Shield, Smartphone, QrCode } from 'lucide-react';
+import { CreditCard, Shield, Smartphone, QrCode, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -46,23 +46,18 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="flex-1 relative">
-            <div className="w-full h-[500px] bg-gradient-to-br from-bank-blue to-blue-400 rounded-3xl shadow-xl flex items-center justify-center">
+          <div className="flex-1 flex flex-col lg:flex-row items-center gap-8">
+            {/* Bank Card Preview */}
+            <div className="w-full lg:w-2/3 h-[500px] bg-gradient-to-br from-bank-blue to-blue-400 rounded-3xl shadow-xl flex items-center justify-center">
               <div className="bg-white w-3/4 h-3/4 rounded-2xl shadow-lg flex flex-col p-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 left-0 h-2 bg-bank-blue"></div>
                 <h3 className="text-xl font-bold text-bank-navy">Carte Wenank</h3>
                 <div className="mt-auto h-48 w-full bg-gradient-to-r from-bank-blue to-blue-600 rounded-xl p-4 flex flex-col justify-between shadow-md">
                   <div className="flex justify-between items-center">
                     <div className="w-12 h-8 bg-yellow-300 rounded-md"></div>
-                    <div className="text-white flex items-center">
-                      <div>
-                        <p className="text-xs opacity-80">Balance</p>
-                        <p className="font-bold">€1,250.00</p>
-                      </div>
-                      <div className="ml-4 p-2 bg-white rounded-lg">
-                        <QrCode className="text-bank-blue w-12 h-12" />
-                        <p className="text-xs text-bank-navy font-medium text-center mt-1">Scanner pour télécharger</p>
-                      </div>
+                    <div className="text-white">
+                      <p className="text-xs opacity-80">Balance</p>
+                      <p className="font-bold">€1,250.00</p>
                     </div>
                   </div>
                   <div className="text-white">
@@ -88,6 +83,19 @@ const Hero = () => {
                   </div>
                 </div>
               </div>
+            </div>
+
+            {/* Prominent QR Code */}
+            <div className="lg:w-1/3 flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg border-2 border-bank-blue/20">
+              <h3 className="text-xl font-bold text-bank-navy mb-4">Téléchargez l'application</h3>
+              <div className="bg-white p-4 rounded-2xl shadow-md border-4 border-bank-blue">
+                <QrCode className="w-48 h-48 text-bank-navy" strokeWidth={1.5} />
+              </div>
+              <p className="text-bank-gray text-center mt-4 font-medium">Scannez pour installer Wenank</p>
+              <Button className="mt-4 bg-bank-blue hover:bg-blue-600 text-white flex items-center gap-2">
+                <Download size={18} />
+                Télécharger
+              </Button>
             </div>
           </div>
         </div>
