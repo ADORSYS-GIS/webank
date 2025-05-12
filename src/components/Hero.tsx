@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { CreditCard, Shield, Smartphone } from 'lucide-react';
+import { CreditCard, Shield, Smartphone, QrCode } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -12,7 +12,7 @@ const Hero = () => {
               La banque qui <span className="text-bank-blue">s'adapte</span> à votre vie
             </h1>
             <p className="mt-6 text-lg text-bank-gray max-w-2xl">
-              BankHaven vous offre des solutions bancaires modernes, sécurisées et accessibles. Gérez vos finances en toute simplicité où que vous soyez.
+              Wenank vous offre des solutions bancaires modernes, sécurisées et accessibles. Gérez vos finances en toute simplicité où que vous soyez.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button className="bg-bank-blue hover:bg-blue-600 text-white">Ouvrir un compte</Button>
@@ -50,13 +50,19 @@ const Hero = () => {
             <div className="w-full h-[500px] bg-gradient-to-br from-bank-blue to-blue-400 rounded-3xl shadow-xl flex items-center justify-center">
               <div className="bg-white w-3/4 h-3/4 rounded-2xl shadow-lg flex flex-col p-6 relative overflow-hidden">
                 <div className="absolute top-0 right-0 left-0 h-2 bg-bank-blue"></div>
-                <h3 className="text-xl font-bold text-bank-navy">Carte Bank<span className="text-bank-blue">Haven</span></h3>
+                <h3 className="text-xl font-bold text-bank-navy">Carte Wenank</h3>
                 <div className="mt-auto h-48 w-full bg-gradient-to-r from-bank-blue to-blue-600 rounded-xl p-4 flex flex-col justify-between shadow-md">
-                  <div className="flex justify-between">
+                  <div className="flex justify-between items-center">
                     <div className="w-12 h-8 bg-yellow-300 rounded-md"></div>
-                    <div className="text-white text-right">
-                      <p className="text-xs opacity-80">Balance</p>
-                      <p className="font-bold">€1,250.00</p>
+                    <div className="text-white flex items-center">
+                      <div>
+                        <p className="text-xs opacity-80">Balance</p>
+                        <p className="font-bold">€1,250.00</p>
+                      </div>
+                      <div className="ml-4 p-2 bg-white rounded-lg">
+                        <QrCode className="text-bank-blue w-12 h-12" />
+                        <p className="text-xs text-bank-navy font-medium text-center mt-1">Scanner pour télécharger</p>
+                      </div>
                     </div>
                   </div>
                   <div className="text-white">
