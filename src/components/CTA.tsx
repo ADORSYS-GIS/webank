@@ -1,18 +1,22 @@
-
 import { Button } from '@/components/ui/button';
 import { Smartphone } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import { translations } from '@/translations';
 
 const CTA = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section className="py-20 bg-gradient-to-r from-bank-blue to-blue-600 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div className="mb-8 md:mb-0 md:mr-8 md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Prêt à rejoindre la banque du futur ?
+              {t.cta.title}
             </h2>
             <p className="text-lg text-blue-100 mb-8 max-w-lg">
-              Téléchargez notre application et découvrez une nouvelle façon de gérer votre argent. Ouvrez un compte en moins de 5 minutes.
+              {t.cta.subtitle}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-white text-bank-blue hover:bg-blue-50 flex items-center justify-center">

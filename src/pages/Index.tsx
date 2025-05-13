@@ -1,23 +1,29 @@
-
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import Pricing from "@/components/Pricing";
-import Testimonials from "@/components/Testimonials";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
+import { LanguageProvider } from '@/contexts/LanguageContext';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/Hero';
+import Services from '@/components/Services';
+import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
+import About from '@/components/About';
+import Features from '@/components/Features';
+import AppPreview from '@/components/AppPreview';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      <Hero />
-      <Services />
-      <Pricing />
-      <Testimonials />
-      <CTA />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen bg-white">
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Services />
+          <Features />
+          <AppPreview />
+          <CTA />
+          <Footer />
+        </main>
+      </div>
+    </LanguageProvider>
   );
 };
 
