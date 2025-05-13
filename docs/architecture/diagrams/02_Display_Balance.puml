@@ -1,0 +1,22 @@
+@startuml
+actor User
+participant UserApp
+participant userApp
+participant OnlineBanking
+participant CoreBanking
+
+User -> UserApp : Select Account
+UserApp --> User : Display Balance
+User -> UserApp : Initiate Payment
+UserApp --> User : Display Form
+User -> userApp : [Select|Enter] Recipient
+User -> UserApp : Enter Amount
+User -> UserApp : Enter Transaction PIN
+UserApp -> UserApp : Create Payment Initiation Request(PAIN.001)
+UserApp -> OnlineBanking : Request Payment(BankID, PAIN) [App-Signature, TX-Signature]
+OnlineBanking -> OnlineBanking : Check credentials (BankID, PAIN) [App-Signature, TX-Signature]
+OnlineBanking -> CoreBanking : Initiate payment(PAIN.001)
+CoreBanking --> OnlineBanking : Payment Initiation Response
+OnlineBanking --> UserApp : Display Payment Confirmation
+UserApp --> User : Display Payment Confirmation
+@enduml

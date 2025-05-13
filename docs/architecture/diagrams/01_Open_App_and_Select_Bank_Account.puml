@@ -1,0 +1,24 @@
+
+@startuml
+actor User
+participant Device
+participant UserApp
+participant DeviceStorage
+
+User -> Device: Start App (Select App Icon)
+Device -> UserApp: Launch App
+UserApp --> User: Request App Pin
+User -> UserApp: Enter App Pin
+
+
+UserApp -> DeviceStorage: Read Credentials
+DeviceStorage --> UserApp: Credentials
+UserApp -> DeviceStorage: Read App Data
+DeviceStorage --> UserApp: App Data
+UserApp -> UserApp: Load/Decrypt App Data
+
+
+UserApp --> User: Display BankIDs
+User -> UserApp: Select BankID
+UserApp --> User: Display List of Accounts
+@enduml
